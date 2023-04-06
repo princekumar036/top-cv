@@ -146,7 +146,7 @@ color: rgba(256, 256, 256, 0.8)
 .profile textarea {
     width: 100%;
     resize: vertical;
-    height: 5em;
+    height: 10em;
 }
 
 /* ===== EDUCATION ===== */
@@ -218,7 +218,7 @@ input::-webkit-inner-spin-button {
     font-size: 1rem;
     background-color: var(--accent);
     padding: 3px 0;
-    box-shadow: 0 0 5px var(--gray);
+    box-shadow: 0 0 3px var(--gray);
 }
 .helper-buttons button:hover {
     cursor: pointer;

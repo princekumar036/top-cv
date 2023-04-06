@@ -94,6 +94,7 @@ function App() {
               <input name="bio_img" id="bio_img" type="file" accept="image/*" hidden />
             </div>
 
+            {/* <Input fieldName="First Name" value={cv.bio.firstName} /> */}
             <input type="text" name="firstName" placeholder='First Name' value={cv.bio.firstName} onChange={changeBio} />
             <input type="text" name="lastName" placeholder='Last Name' value={cv.bio.lastName} onChange={changeBio} />
             <input className='designation' type="text" name="designation" placeholder='Designation' value={cv.bio.designation} onChange={changeBio} />
@@ -144,7 +145,6 @@ function App() {
 
             <div>
               <textarea placeholder='Describe yourself...' value={cv.profile.description}></textarea>
-              {/* <input type="url" name="linkedin" id='linkedin' placeholder='LinkedIn' value={cv.social.linkedin} onChange={(changeSocial)} /> */}
             </div>
           </section>
 
