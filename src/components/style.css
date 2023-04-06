@@ -1,0 +1,232 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+:root {
+    --gray: #3C4240;
+    --blue: #56C8EA;
+    --white: #FFFFFF;
+    --accent: #CCCCCC;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: var(--gray);
+}
+
+input, textarea {
+    border: none;
+    width: 100%;
+    background-color: transparent;
+}
+input:focus, textarea:focus {
+    outline: none;
+}
+
+section {
+    padding: 1rem 2rem;
+}
+
+.section_title {
+    text-transform: uppercase;
+    border-bottom: 2px solid var(--blue);
+    margin-bottom: 1rem;
+}
+
+.section_title i {
+    margin-right: 1rem;
+}
+
+
+header {
+    background-color: var(--accent);
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.cv-body {
+    max-width: 900px;
+    margin: 1rem auto;
+    display: flex;
+    box-shadow: 0 0 5px var(--gray);
+}
+
+.cv-left {
+    flex-basis: 40%;
+    max-width: 300px;
+    background-color: var(--gray);
+    color: var(--white);
+}
+.cv-left input {
+    color: var(--white);
+}
+
+
+/* ===== BIO ===== */
+.bio {
+    background-color: var(--blue);
+    padding: 2rem 0;
+}
+
+.bio_img_container {
+    width: 150px;
+    height: 150px;
+    margin: 1rem auto;
+    position: relative;
+}
+.bio_img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+
+.bio_icon_container {
+    background: rgba(0, 0, 0, 0);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    border-radius: 100%;
+}
+.bio_icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    color: rgba(256, 256, 256, 0)
+}
+
+.bio_icon_container:hover {
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.8);
+}
+.bio_icon_container:hover .bio_icon {
+color: rgba(256, 256, 256, 0.8)
+}
+
+.bio input {
+    color: var(--gray);
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+}
+
+.bio .designation {
+    font-size: 0.75rem;
+}
+
+/* ===== CONTACT ===== */
+.input_div {
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+.input_div label:first-child {
+    grid-row: 1 / 3;
+}
+.input_div label {
+    font-weight: bold;
+    font-size: small;
+}
+.input_div i {
+    font-size: large;
+}
+
+/* ===== PROFILE ===== */
+.profile textarea {
+    width: 100%;
+    resize: vertical;
+    height: 5em;
+}
+
+/* ===== EDUCATION ===== */
+.education, .experience {
+    position: relative;
+}
+.education > div:first-child button, .experience > div:first-child button {
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+}
+
+.cv-right {
+    flex-basis: 70%;
+}
+.cv-right input[type="number"] {
+    width: 4ch;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.eduBlock, .expBlock  {
+    display: grid;
+    grid-template-columns: 1fr 2fr 7fr;
+    margin-bottom: 1rem;
+}
+.eduBlock_years input, .expBlock_years input {
+    font-weight: bold;
+}
+
+.eduBlock_inputs, .expBlock_inputs {
+    display: flex;
+    flex-direction: column;
+}
+
+.eduBlock_inputs input[name="university"], .expBlock_inputs input[name="company"] {
+    font-weight: bold;
+}
+.eduBlock_inputs input[name="city"], .expBlock_inputs input[name="city"] {
+    /* font-weight: bold; */
+    font-style: italic;
+    font-size: 0.75rem;
+}
+
+.cv-right button {
+    border: none;
+    background-color: var(--gray);
+    color: var(--white);
+    padding: 2px 5px;
+}
+.cv-right button:hover {
+    cursor: pointer;
+}
+
+
+/* ===== BUTTONS ===== */
+.helper-buttons {
+    max-width: 900px;
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+.helper-buttons button {
+    border: 1px solid var(--gray);
+    font-size: 1rem;
+    background-color: var(--accent);
+    padding: 3px 0;
+    box-shadow: 0 0 5px var(--gray);
+}
+.helper-buttons button:hover {
+    cursor: pointer;
+    border: none;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background-color: var(--accent);
+    text-align: center;
+}
